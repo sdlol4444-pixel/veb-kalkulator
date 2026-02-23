@@ -1,101 +1,107 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Page background */
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #c7a4f0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(rgba(30, 30, 60, 0.7), rgba(30, 30, 60, 0.7)),
+  url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
 }
 
-
+/* Main container */
 .gore {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
-  width: 100%;
+  padding: 20px;
 }
 
-
+/* Main title */
 h1 {
   text-align: center;
-  color: #4a2a94;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 36px;
 }
 
-
+/* Section titles */
 h2 {
-  color: #6240b3;
+  color: #ffffff;
   text-align: center;
   font-size: 24px;
+  margin-bottom: 10px;
 }
 
-/* Dropdown */
-#material {
-  background-color: #fdfdfd;
-  color:#000000;
-  font-weight: bold;
-}
-
-/* Selekcija */
+/* Card sections */
 .section {
-  background-color: rgb(245, 229, 255);
-  padding: 15px;
+  background: rgba(30, 30, 50, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 20px;
   margin: 20px 0;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
 }
 
-
+/* Labels */
 label {
   display: block;
   margin-top: 10px;
   font-weight: bold;
+  color: #ffffff;
 }
 
-
+/* Inputs and dropdown */
 input, select {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   margin-top: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
 }
 
-
+/* Buttons */
 button {
   margin-top: 15px;
-  padding: 10px;
+  padding: 12px;
   width: 100%;
-  background-color: #6240b3;
+  background: linear-gradient(135deg, #7f5cff, #4a2fd6);
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-
+/* Button hover */
 button:hover {
-  background-color: #2d1368;
+  background: linear-gradient(135deg, #4a2fd6, #2b1a9c);
+  transform: scale(1.02);
 }
 
-
+/* Result text */
 p {
   margin-top: 10px;
   font-weight: bold;
-  color: #000000;
+  color: #ffffff;
 }
 
+/* Mobile responsive */
 @media (max-width: 600px) {
-  body {
-    font-size: 14px;
+  h1 {
+    font-size: 28px;
   }
 
-  h2 {
-    font-size: 20px;
-  }
-
-  button {
-    font-size: 14px;
-  }
-
-  input, select {
-    font-size: 14px;
+  .section {
+    padding: 15px;
   }
 }
